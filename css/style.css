@@ -27,6 +27,8 @@ button{
     width: 70px;
     height:  70px;
     margin: 5px;
+    cursor: pointer;
+    color: black;
 }
 h1{
     text-align: center;
@@ -35,6 +37,7 @@ h1{
 
 h2{
     color: #fff;
+    margin: 5px;
 }
 main{
     background-color: rgb(255, 255, 255, 0.2);
