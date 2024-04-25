@@ -41,4 +41,11 @@ h2{
 }
 main{
     background-color: rgb(255, 255, 255, 0.2);
+    border-radius: 13px;
+    padding: 5px;
+}
+
+.estadisticas{
+    border: solid 1.51px;
+    padding: 5px;
 }
