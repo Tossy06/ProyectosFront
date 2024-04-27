@@ -37,14 +37,23 @@ main h1{
   grid-template-columns: repeat(10, 35px);
   grid-template-rows: repeat(10, 35px);
   background-color: rgba(62, 4, 4, 0.4);
-  border: solid 10px rgb(238, 232, 172);
+  border: solid 10px rgb(238, 232, 172, 0.4);
 }
 
 .marcador{
   padding: 5px;
   border: solid 3px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .marcador h2{
   font-size: 16px;
+}
+
+.marcador button{
+  width: 20px;
+  height: 20px;
+  background-color: rgb(254, 214, 161);
 }
