@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+    
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url(ImagenesPlanetas/Background3.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #7676ab;
+  
+}
+
+main{
+  background-color: rgb(249, 246, 204);
+}
+
+main h1{
+  text-align: center;
+  border: solid 3px;
+}
+
+.tab{
+  display: grid;
+  grid-template-columns: repeat(10, 35px);
+  grid-template-rows: repeat(10, 35px);
+  background-color: rgba(62, 4, 4, 0.4);
+  border: solid 10px rgb(238, 232, 172);
+}
+
+.marcador{
+  padding: 5px;
+  border: solid 3px;
+}
+
+.marcador h2{
+  font-size: 16px;
+}
