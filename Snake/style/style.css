@@ -16,7 +16,6 @@ body{
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: url(ImagenesPlanetas/Background3.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   background-color: #7676ab;
@@ -34,11 +33,23 @@ main h1{
 
 .tab{
   display: grid;
-  grid-template-columns: repeat(10, 35px);
-  grid-template-rows: repeat(10, 35px);
+  grid-template: repeat(20, 20px) / repeat(20, 20px);
   background-color: rgba(62, 4, 4, 0.4);
   border: solid 10px rgb(238, 232, 172, 0.4);
 }
+
+.tab .food{
+  background: rgb(252, 50, 50);
+  border-radius: 20px;
+  width: 15px;
+  height: 15px;
+}
+.tab .head{
+  background: rgb(90, 252, 50);
+  width: 15px;
+  height: 15px;
+}
+
 
 .marcador{
   padding: 5px;
