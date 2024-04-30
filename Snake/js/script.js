@@ -9,6 +9,10 @@ let snakex= 5, snakey = 10;
 let snakeBody = [];
 let speedx = 0, speedy = 0;
 
+//Marcador
+let contador = 0;
+MostrarScore = document.getElementById('Aciertos');
+
 
 
 
@@ -38,15 +42,19 @@ const changeDirection = (e) =>{
     }
 }
 
+//Increase speed
+
+
 
 
 const initGame = () => {
     // Generar el markup HTML para la comida
     let htmlMarkup = `<div class="food" style="grid-column: ${foodx}; grid-row: ${foody};"></div>`;
-    
     if (snakex === foodx && snakey === foody) {
+        contador ++;
         changePositionFood();
         snakeBody.push([snakex, snakey]); // Agrega el nuevo segmento al final del arreglo snakeBody
+        MostrarScore.innerHTML = `Score: ${contador}`
     }
     //Hacer que el cuerpo siga a la cabeza
     for(let i =snakeBody.length -1; i > 0; i--){
